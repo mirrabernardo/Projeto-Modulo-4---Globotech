@@ -1,19 +1,19 @@
 # Projeto Modulo 4 - Globotech
-Projeto Unificado - Fase 4: Sistema de análise de engajamento com persistência em banco de dados relacional (PostgreSQL)
+Projeto Unificado - Fase 4: Sistema de análise de engajamento com persistência em banco de dados relacional.
 
 
 # Projeto Unificado - Fase 4
 
 ## Divisão de tarefas e papéis
 
-| Integrante | Papel                          | Tarefas Previstas                             |
-|------------|--------------------------------|-----------------------------------------------|
-| Mirra      | Responsável técnica (co-piloto)| Modelagem, Inserção de Dados, Revisão, Slides |
-| Tales      | Desenvolvedor de integração    | Inserção de Dados, Validação, Slides          |
-| Diego      | Guia Técnico (co-piloto)       | Schema SQL, Suporte, Testes                   |
-| William    | Programador em par (condutor)  | Implementação do schema SQL                   |
-| André      | Guia Técnico (co-piloto)       | Validação schema, Consultas SQL, Testes       |
-| Marcelo    | Programador em par (condutor)  | Implementação das consultas SQL               |
+| **Integrante** | **Papel**                              | **Tarefas Previstas** |
+|----------------|----------------------------------------|------------------------|
+| **Mirra**      | Responsável técnica e organizacional   | - Modelagem de Dados (MER e DER) (etapa 1) <br> - Criação e Validação do schema.sql (etapa 2) <br> - Revisão final e integração (etapa 5) <br> - Criação dos slides da apresentação (etapa 6) |
+| **Tales**      | Programador em par (condutor)          | - Inserção de dados com Diego (etapa 3) <br> - Teste de consistência com Diego (etapa 3) <br> - Suporte na validação final (etapa 5) |
+| **Diego**      | Guia Técnico (co-piloto)               | - Inserção de dados com Tales (etapa 3) <br> - Validação da carga com testes de consistência (etapa 3) <br> - Suporte à integração (etapa 5) |
+| **André**      | Guia Técnico (co-piloto)               | - Implementação das consultas SQL com Marcelo (etapa 4) <br> - Validação do schema e testes (etapa 4) <br> - Apoio à integração (etapa 5) |
+| **Marcelo**    | Programador em par (condutor)          | - Implementação das consultas SQL com André (etapa 4) <br> - Validação do schema com André (etapa 4) <br> - Apoio à integração (etapa 5) |
+        |
 
 
 ---
@@ -37,12 +37,6 @@ Projeto Unificado - Fase 4: Sistema de análise de engajamento com persistência
       <a href="https://github.com/Diego-Teixeira-dev">
         <img src="https://github.com/user-attachments/assets/8847641e-31a1-484e-b4f4-3163ce9bfc37" width="96" height="96"><br>
         <strong>Diego</strong>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/wlopes82">
-        <img src="https://github.com/user-attachments/assets/0da1f963-1787-443f-9f60-6c856c66be60" width="96" height="96"><br>
-        <strong>William</strong>
       </a>
     </td>
     <td align="center">
