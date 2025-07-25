@@ -54,7 +54,7 @@ Execute o arquivo `carga_dados.py` para popular o banco de dados criado localmen
 ### Estrutura do Repositório
 *Essa deve ser a estrutura do repositório após seguir os passos acima.*
 
-```mermaid
+```
 📁 Projeto-Modulo-4---Globotech
 ├── 📁 docs
 │   ├── diagrama-entidade-relacionamento.jpg
