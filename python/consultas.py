@@ -7,7 +7,7 @@ conexao, cursor = conectar_mysql() # conecta ao banco
 arquivos_sql = [
     'sql/consulta_1.sql',
     'sql/consulta_2.sql',
-    'sql/consulta_3.sql',
+    'sql/consulta_3.sql'
 ]
 
 # For para executar cada arquivo de consulta SQL

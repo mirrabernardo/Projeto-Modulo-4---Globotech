@@ -1,1 +1,2 @@
 -- Plataforma com maior engajamento (total de interações like, share, comment)
+
