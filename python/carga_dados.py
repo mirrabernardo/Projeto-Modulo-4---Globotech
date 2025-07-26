@@ -5,11 +5,34 @@ from conexao_bd import conectar_mysql  # Função que retorna conexão e cursor 
 # Conecta ao banco
 conexao, cursor = conectar_mysql()
 
+# Verifica se o banco já está populado
+cursor.execute("SELECT COUNT(*) FROM globotech.interacao")
+total_interacoes = cursor.fetchone()[0]
+
+# Verifica se o banco já está populado para não carregar dados mais de uma vez
+if total_interacoes > 0:
+    print("Banco já populado. A carga de dados será ignorada.")
+    cursor.close()
+    conexao.close()
+    exit()  
+
 # Carrega CSV
-df = pd.read_csv('docs//interacoes_globo.csv')
+try:
+    df = pd.read_csv('docs//interacoes_globo.csv')
+except FileNotFoundError: # sinaliza que o arquivo não foi encontrado
+    print("Arquivo CSV não encontrado.")
+    cursor.close()
+    conexao.close()
+    exit()
+except pd.errors.ParserError as e:
+    print(f"Erro ao ler CSV: {e}")
+    cursor.close()
+    conexao.close()
+    exit()
 
 # Função para inserir plataformas (nome único)
 def inserir_plataformas():
+    print(f"Inserindo Plataformas...")
     plataformas = df['plataforma'].unique()
     for p in plataformas:
         try:
@@ -20,6 +43,7 @@ def inserir_plataformas():
 
 # Função para inserir tipos de interação (nome único)
 def inserir_tipos_interacao():
+    print("Inserindo Tipos de Interação...")
     tipos = df['tipo_interacao'].unique()
     for t in tipos:
         try:
@@ -30,6 +54,7 @@ def inserir_tipos_interacao():
 
 # Inserir conteúdos (id_conteudo e nome_conteudo)
 def inserir_conteudos():
+    print("Inserindo Conteúdos...")
     conteudos_unicos = df[['id_conteudo', 'nome_conteudo']].drop_duplicates()
     for _, row in conteudos_unicos.iterrows():
         try:
@@ -42,6 +67,7 @@ def inserir_conteudos():
 
 # Inserir usuários (id_usuario)
 def inserir_usuarios():
+    print("Inserindo Usuários...")
     usuarios_unicos = df['id_usuario'].unique()
     for u in usuarios_unicos:
         try:
@@ -72,6 +98,7 @@ def segundos_para_time(segundos):
 
 # Inserir interações
 def inserir_interacoes(mapa_plataforma, mapa_tipo):
+    print("Inserindo Interações...")
     for _, row in df.iterrows():
         try:
             watch_duration = segundos_para_time(row['watch_duration_seconds'])
@@ -101,7 +128,7 @@ conexao.commit()
 
 mapa_plataforma, mapa_tipo = criar_mapas()
 inserir_interacoes(mapa_plataforma, mapa_tipo)
-
 conexao.commit()
-cursor.close()
-conexao.close()
+
+print("Carga concluída com sucesso!")
+print(f"Total de interações inseridas: {len(df)}")
