@@ -6,7 +6,7 @@ from conexao_bd import conectar_mysql  # Função que retorna conexão e cursor 
 conexao, cursor = conectar_mysql()
 
 # Carrega CSV
-df = pd.read_csv('docs/interacoes_globo.csv')
+df = pd.read_csv('docs//interacoes_globo.csv')
 
 # Função para inserir plataformas (nome único)
 def inserir_plataformas():
