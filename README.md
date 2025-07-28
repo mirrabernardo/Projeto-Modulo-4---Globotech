@@ -97,7 +97,6 @@ Execute o arquivo `carga_dados.py` para popular o banco de dados criado localmen
 | **Tales**      | Programador em par (condutor)          | - Inserção de dados (etapa 3) <br> - Teste de consistência (etapa 3) <br> - Implementação de consulta SQL (etapa 4) <br> - Suporte na validação final (etapa 5) |
 | **Diego**      | Guia Técnico (co-piloto)               | - Inserção de dados (etapa 3) <br> - Validação da carga(etapa 3) <br> - Implementação de consulta SQL (etapa 4) <br> - Apoio à integração (etapa 5) |
 | **André**      | Guia Técnico (co-piloto)               | - Implementação de consulta SQL (etapa 4) <br> - Validação do schema e testes (etapa 4) <br> - Apoio à integração (etapa 5) |
-| **Marcelo**    | Programador em par (condutor)          | - Implementação de consulta SQL (etapa 4) <br> - Validação do schema (etapa 4) <br> - Apoio à integração (etapa 5) |
 
 ## Projetos Anteriores
 
@@ -140,12 +139,6 @@ Implementação de ingestão via fila FIFO e gerenciamento de dados através de 
       <a href="https://github.com/andrelassis">
         <img src="https://github.com/user-attachments/assets/782a64f3-7569-4063-bd26-6e1c0353ca19" width="96" height="96"><br>
         <strong>André</strong>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/MarceloZilotti">
-        <img src="https://github.com/user-attachments/assets/761f722f-a11a-47f0-857b-67dc44f98c44" width="96" height="96"><br>
-        <strong>Marcelo</strong>
       </a>
     </td>
   </tr>
