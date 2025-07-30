@@ -1,4 +1,4 @@
-# APLICAÇÃO PARA RETORNAR AS CONSULTAS EM SQL
+# APLICAÇÃO PARA RETORNAR AS CONSULTAS EM SQL SOLICITADAS NO PROJETO
 from conexao_bd import conectar_mysql #importa a função do conexao_bd.py
 
 conexao, cursor = conectar_mysql() # conecta ao banco
