@@ -58,7 +58,7 @@ SELECT
     c.nome_conteudo,
     TIME_FORMAT(
         SEC_TO_TIME(
-            SUM(TIME_TO_SEC(i.watch_duration)) / COUNT(i.watch_duration)
+            AVG(TIME_TO_SEC(i.watch_duration))
         ),
         '%H:%i:%s'
     ) AS media_tempo_consumo
@@ -164,7 +164,7 @@ SELECT
     p.nome_plataforma,
     TIME_FORMAT(
         SEC_TO_TIME(
-            SUM(TIME_TO_SEC(i.watch_duration)) / COUNT(i.watch_duration)
+            AVG(TIME_TO_SEC(i.watch_duration))
         ),
         '%H:%i:%s'
     ) AS media_tempo_consumo
