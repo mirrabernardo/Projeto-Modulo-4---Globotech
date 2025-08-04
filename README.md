@@ -87,6 +87,8 @@ Execute o arquivo `carga_dados.py` para popular o banco de dados criado localmen
 └── requirements.txt
 
 ```
+### Estrutura do Banco de Dados
+<img width="367" height="457" alt="Screenshot 2025-07-30 at 03 17 57" src="https://github.com/user-attachments/assets/3dae0975-dddd-4b27-9e25-59d734b4eb6a" />
 
 
 ## Divisão de tarefas e papéis
